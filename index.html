@@ -4,17 +4,69 @@
     <meta charset="UTF-8">
     <title>Natural Bladder Support Solution</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .hero { text-align: center; padding: 40px 0; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                        url('image1banner.jpeg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .title-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 0 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .title-box h1 {
+            color: #2B3467;
+            margin: 0;
+            font-size: 2.5rem;
+            line-height: 1.3;
+        }
+
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
         .problem-section { 
             background: #F8F9FA; 
             padding: 40px 20px; 
             margin: 30px 0; 
             text-align: center;
         }
-        .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0; }
-        .benefit-box { padding: 25px; border-radius: 10px; background: #E8F3FC; text-align: center; }
+
+        .benefits-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 30px; 
+            margin: 40px 0; 
+        }
+
+        .benefit-box { 
+            padding: 25px; 
+            border-radius: 10px; 
+            background: #E8F3FC; 
+            text-align: center; 
+        }
+
         .testimonial-box { 
             background: #FFF; 
             border: 2px solid #BAD7E9; 
@@ -23,6 +75,7 @@
             border-radius: 10px; 
             text-align: center; 
         }
+
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
@@ -32,7 +85,13 @@
             border-radius: 30px;
             margin: 20px 0;
             font-weight: bold;
+            transition: transform 0.3s ease;
         }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
         .problem-section ul {
             list-style: none;
             padding: 0;
@@ -40,12 +99,22 @@
             display: inline-block;
             text-align: left;
         }
+
+        footer { 
+            text-align: center; 
+            font-size: 0.9em; 
+            color: #666; 
+            margin-top: 50px; 
+            padding: 20px;
+            background: #F8F9FA;
+        }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>Silent Struggle No More: Regain Your Confidence Naturally</h1>
-        <img src="images/image1banner.jpeg" alt="Natural Bladder Support Solution" style="max-width: 400px; margin: 20px 0;">
+        <div class="title-box">
+            <h1>Silent Struggle No More:<br>Regain Your Confidence Naturally</h1>
+        </div>
     </div>
 
     <div class="container">
@@ -90,17 +159,17 @@
         
         <div class="testimonial-box">
             <p>"I can finally enjoy my morning walks without worry. Life-changing results!"</p>
-            <p><strong>- Maria G., 61</strong></p>
+            <p><strong>- Maria G., 35</strong></p>
         </div>
 
         <div style="text-align: center; margin: 40px 0;">
             <a href="[SALES_PAGE_URL]" class="cta-button">Discover Natural Relief →</a>
             <br>
-            <a href="[SALES_PAGE_URL]" class="cta-button" style="background: #4CAF50; margin-top: 15px;">How It Works →</a>
+            <a href="[SALES_PAGE_URL]" class="cta-button" style="background: #4CAF50; margin-top: 15px;">Learn More →</a>
         </div>
 
-        <footer style="text-align: center; font-size: 0.9em; color: #666; margin-top: 50px;">
-            <p>† Individual results may vary. Consult your healthcare provider before use.</p>
+        <footer>
+            <p>† Individual results may vary. Consult your healthcare provider before use. This is not medical advice.</p>
         </footer>
     </div>
 </body>
